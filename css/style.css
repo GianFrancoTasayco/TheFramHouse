@@ -109,17 +109,58 @@
             color: #5ec79c; }
       .container-S-menu .top-md:hover .btn {
         display: flex; }
-  .container .img2 {
-    background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.2s ease-out 0s; }
-  .container .img3 {
-    background: url(../img/main-slider/image-3.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.2s ease-out 0s; }
+  .container-I {
+    width: 100%; }
+    .container-I .color-I {
+      width: 100%;
+      background-color: #c1c1c194; }
+    .container-I-If {
+      padding: 110px 0px 70px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .container-I-If .container-logo {
+        width: 100%; }
+        .container-I-If .container-logo h1 {
+          font-family: "Dancing Script", cursive;
+          font-size: 25px;
+          padding: 5px 0; }
+        .container-I-If .container-logo div {
+          margin: 0 auto;
+          width: 50px;
+          height: 3px;
+          background: #5ec79c;
+          border-radius: 25px; }
+      .container-I-If .container-img {
+        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .container-I-If .container-img div {
+          width: 359px; }
+          .container-I-If .container-img div h1 {
+            font-size: 25px;
+            font-weight: 300; }
+          .container-I-If .container-img div a {
+            text-decoration: none;
+            color: #000; }
+          .container-I-If .container-img div p {
+            padding: 10px 0px 10px;
+            font-size: 15px; }
+          .container-I-If .container-img div a:hover {
+            color: #5ec79c; }
+
+.img2 {
+  background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-out 0s; }
 
 /*# sourceMappingURL=style.css.map */
