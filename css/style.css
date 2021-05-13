@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kanit:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif; }
+  .container-S {
+    width: 100%;
+    background: url(../img/main-slider/58183300-fondo-transparente-dibujado-a-mano-doodle-de-verduras-iconos-conjunto-ilustración-vectorial-de-temporad.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out 0s; }
+    .container-S .color {
+      background-color: #00000094; }
+    .container-S-menu {
+      margin: 0 auto;
+      width: 95%;
+      display: flex;
+      flex-direction: column; }
+      .container-S-menu header {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between; }
+        .container-S-menu header .img {
+          width: 170px;
+          height: 85px;
+          padding: 0;
+          background: url(../img/logo-4.png);
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+        .container-S-menu header ul {
+          display: flex;
+          align-items: center;
+          gap: 20px; }
+          .container-S-menu header ul li {
+            display: flex; }
+            .container-S-menu header ul li a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 15px;
+              font-weight: 700; }
+            .container-S-menu header ul li a:hover {
+              color: #5ec79c; }
+      .container-S-menu div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 170px 0; }
+        .container-S-menu div img {
+          width: 64px;
+          height: auto; }
+        .container-S-menu div h1 {
+          font-family: "Dancing Script", cursive;
+          font-weight: 700;
+          font-size: 43px;
+          color: #fff; }
+        .container-S-menu div div {
+          display: flex;
+          gap: 10px;
+          padding: 10px 0;
+          flex-direction: row;
+          justify-content: center;
+          font-family: "Kanit", sans-serif; }
+          .container-S-menu div div a:nth-child(2) {
+            text-decoration: none;
+            padding: 8px 30px;
+            color: #fff;
+            font-size: 15px;
+            background: #f5b062;
+            border-radius: 25px;
+            font-weight: 700;
+            border: 2px solid #f5b062;
+            transition: all 0.2s ease-out 0s; }
+          .container-S-menu div div a:nth-child(2):hover {
+            background: none;
+            color: #f5b062; }
+          .container-S-menu div div a:nth-child(3) {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 8px 30px;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: all 0.2s ease-out 0s; }
+          .container-S-menu div div a:nth-child(3):hover {
+            color: #f5b062;
+            background: #fff; }
+          .container-S-menu div div span {
+            cursor: pointer;
+            display: flex;
+            padding: 8px 8px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #5ec79c;
+            border: 2px solid #5ec79c; }
+          .container-S-menu div div span:hover {
+            background: none;
+            color: #5ec79c; }
+      .container-S-menu .top-md:hover .btn {
+        display: flex; }
+  .container .img2 {
+    background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out 0s; }
+  .container .img3 {
+    background: url(../img/main-slider/image-3.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-out 0s; }
+
+/*# sourceMappingURL=style.css.map */
