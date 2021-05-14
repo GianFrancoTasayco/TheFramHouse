@@ -33,7 +33,7 @@ $font2 : 'Dancing Script', cursive;
                     width: 170px;
                     height: 85px;
                     padding: 0;
-                    background: url(../img/logo-4.png);
+                    background: url(../img/download.png);
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -152,7 +152,7 @@ $font2 : 'Dancing Script', cursive;
                 width: 100%;
                 h1{
                     font-family: $font2;
-                    font-size: 25px;
+                    font-size: 30px;
                     padding: 5px 0;
                 }
                 div{
@@ -172,6 +172,11 @@ $font2 : 'Dancing Script', cursive;
                 flex-wrap: wrap;
                 div{
                     width: 359px;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 25px;
+                    }
                     h1{
                         font-size: 25px;
                         font-weight: 300;
@@ -189,6 +194,82 @@ $font2 : 'Dancing Script', cursive;
                     }
                 }
                 
+            }
+        }
+    }
+    &-F{
+        width: 100%;
+        background: #333333;
+        .color-Footer{
+            padding: 100px 0;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            div{
+                padding: 10px 0px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-weight: 300;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    p{
+                        width: 80%;
+                        margin: 0;
+                        input{
+                            padding: 12.5px 145px 12.5px 20px;
+                            background: #00000030;
+                            border: none;
+                            font-family: $font1;
+                        }
+                    }
+                    a{
+                        padding: 10.5px 20px 10.5px 20px;
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: #5ec79c;
+                    }
+                }
+            }
+            .img-F{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 170px!important;
+                    height: auto;
+                }
+            }
+            div{
+                h2{
+                    font-size: 16px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                .gap-f{
+                    display: flex;
+                    text-align: center;
+                    justify-content: space-between;
+                }
             }
         }
     }

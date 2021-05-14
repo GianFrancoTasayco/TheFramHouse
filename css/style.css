@@ -31,7 +31,7 @@
           width: 170px;
           height: 85px;
           padding: 0;
-          background: url(../img/logo-4.png);
+          background: url(../img/download.png);
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat; }
@@ -127,7 +127,7 @@
         width: 100%; }
         .container-I-If .container-logo h1 {
           font-family: "Dancing Script", cursive;
-          font-size: 25px;
+          font-size: 30px;
           padding: 5px 0; }
         .container-I-If .container-logo div {
           margin: 0 auto;
@@ -144,6 +144,10 @@
         flex-wrap: wrap; }
         .container-I-If .container-img div {
           width: 359px; }
+          .container-I-If .container-img div img {
+            width: 150px;
+            height: 150px;
+            border-radius: 25px; }
           .container-I-If .container-img div h1 {
             font-size: 25px;
             font-weight: 300; }
@@ -155,6 +159,66 @@
             font-size: 15px; }
           .container-I-If .container-img div a:hover {
             color: #5ec79c; }
+  .container-F {
+    width: 100%;
+    background: #333333; }
+    .container-F .color-Footer {
+      padding: 100px 0;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px; }
+      .container-F .color-Footer div {
+        padding: 10px 0px;
+        width: 400px;
+        display: flex;
+        flex-direction: column; }
+        .container-F .color-Footer div h1 {
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 20px; }
+        .container-F .color-Footer div p {
+          font-weight: 300;
+          color: #fff;
+          margin-bottom: 20px; }
+        .container-F .color-Footer div div {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .container-F .color-Footer div div p {
+            width: 80%;
+            margin: 0; }
+            .container-F .color-Footer div div p input {
+              padding: 12.5px 145px 12.5px 20px;
+              background: #00000030;
+              border: none;
+              font-family: "Kanit", sans-serif; }
+          .container-F .color-Footer div div a {
+            padding: 10.5px 20px 10.5px 20px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #5ec79c; }
+      .container-F .color-Footer .img-F {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container-F .color-Footer .img-F img {
+          width: 170px !important;
+          height: auto; }
+      .container-F .color-Footer div h2 {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px; }
+      .container-F .color-Footer div h1 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 20px; }
+      .container-F .color-Footer div .gap-f {
+        display: flex;
+        text-align: center;
+        justify-content: space-between; }
 
 .img2 {
   background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
