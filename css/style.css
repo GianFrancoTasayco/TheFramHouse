@@ -168,6 +168,7 @@
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 7px; }
       .container-F .color-Footer div {
         padding: 10px 0px;
