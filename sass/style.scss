@@ -29,11 +29,12 @@ $font2 : 'Dancing Script', cursive;
                 padding: 15px 0;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 .img{
                     width: 170px;
-                    height: 85px;
+                    height: 110px;
                     padding: 0;
-                    background: url(../img/download.png);
+                    background: url(../img/logo.png);
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -56,6 +57,21 @@ $font2 : 'Dancing Script', cursive;
                     }
 
                 }
+                span{
+                    display: none;
+                    font-size: 30px;
+                    color: #fff;
+                    align-items: center;
+                    padding: 10px;
+                    height: 30px;
+                    background: #5ec79c;
+                    border-radius: 10px;
+                    border: 2px solid #5ec79c;
+                    transition: all 0.2s ease-out 0s;
+                }
+                span:hover{
+                    background: none;
+                }
             }
             div{
                 display: flex;
@@ -76,7 +92,7 @@ $font2 : 'Dancing Script', cursive;
                 }
                 div{
                     display: flex;
-                    gap: 10px;
+                    gap: 1%;
                     padding: 10px 0;
                     flex-direction: row;
                     justify-content: center;
@@ -172,6 +188,7 @@ $font2 : 'Dancing Script', cursive;
                 flex-wrap: wrap;
                 div{
                     width: 359px;
+                    padding-bottom: 10px;
                     .color-fondo{
                         background: #000;
                         height: 151px;
@@ -243,6 +260,7 @@ $font2 : 'Dancing Script', cursive;
                     margin-bottom: 20px;
                 }
                 div{
+                    width: 100%;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -250,10 +268,10 @@ $font2 : 'Dancing Script', cursive;
                         width: 80%;
                         margin: 0;
                         input{
-                            padding: 12.5px 145px 12.5px 20px;
+                            padding: 12.5px 10% 12.5px 20px;
                             background: #00000030;
                             border: none;
-                            width: 217px;
+                            width: 100%;
                             font-family: $font1;
                             color: #fff;
                         }
@@ -291,7 +309,7 @@ $font2 : 'Dancing Script', cursive;
                 justify-content: center;
                 align-items: center;
                 img{
-                    width: 170px!important;
+                    width: 250px!important;
                     height: auto;
                 }
             }
@@ -322,4 +340,16 @@ $font2 : 'Dancing Script', cursive;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.2s ease-out 0s;
+}
+@media screen and (max-width: 858px){
+    .container-S-menu{
+        header{
+            ul{
+                display: none;
+            }
+            span{
+                display: flex;
+            }
+        }
+    }
 }

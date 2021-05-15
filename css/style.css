@@ -26,12 +26,13 @@
       .container-S-menu header {
         padding: 15px 0;
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center; }
         .container-S-menu header .img {
           width: 170px;
-          height: 85px;
+          height: 110px;
           padding: 0;
-          background: url(../img/download.png);
+          background: url(../img/logo.png);
           background-position: center;
           background-size: contain;
           background-repeat: no-repeat; }
@@ -48,6 +49,19 @@
               font-weight: 700; }
             .container-S-menu header ul li a:hover {
               color: #5ec79c; }
+        .container-S-menu header span {
+          display: none;
+          font-size: 30px;
+          color: #fff;
+          align-items: center;
+          padding: 10px;
+          height: 30px;
+          background: #5ec79c;
+          border-radius: 10px;
+          border: 2px solid #5ec79c;
+          transition: all 0.2s ease-out 0s; }
+        .container-S-menu header span:hover {
+          background: none; }
       .container-S-menu div {
         display: flex;
         flex-direction: column;
@@ -242,7 +256,7 @@
         justify-content: center;
         align-items: center; }
         .container-F .color-Footer .img-F img {
-          width: 170px !important;
+          width: 250px !important;
           height: auto; }
       .container-F .color-Footer div h2 {
         font-size: 16px;
@@ -267,6 +281,8 @@
 
 @media screen and (max-width: 858px) {
   .container-S-menu header ul {
-    display: none; } }
+    display: none; }
+  .container-S-menu header span {
+    display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
