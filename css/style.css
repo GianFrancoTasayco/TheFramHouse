@@ -144,10 +144,26 @@
         flex-wrap: wrap; }
         .container-I-If .container-img div {
           width: 359px; }
-          .container-I-If .container-img div img {
+          .container-I-If .container-img div .color-fondo {
+            background: #000;
+            height: 151px;
+            width: 151px;
+            filter: blur(10px);
+            position: relative;
+            z-index: -1; }
+          .container-I-If .container-img div .img-regiones {
+            background: url(../img/regiones/costa.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
             width: 150px;
             height: 150px;
+            z-index: 10;
             border-radius: 25px; }
+          .container-I-If .container-img div .img-sierra {
+            background: url(../img/regiones/cierra.jpg); }
+          .container-I-If .container-img div .img-selva {
+            background: url(../img/regiones/selva.jpg); }
           .container-I-If .container-img div h1 {
             font-size: 25px;
             font-weight: 300; }
@@ -193,10 +209,10 @@
             .container-F .color-Footer div div p input {
               padding: 12.5px 145px 12.5px 20px;
               background: #00000030;
-              color: #fff;
-              width: 215px;
               border: none;
-              font-family: "Kanit", sans-serif; }
+              width: 217px;
+              font-family: "Kanit", sans-serif;
+              color: #fff; }
           .container-F .color-Footer div div a {
             padding: 10.5px 20px 10.5px 20px;
             color: #fff;
@@ -241,7 +257,7 @@
         justify-content: space-between; }
 
 .img2 {
-  background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.jpg);
+  background: url(../img/main-slider/plant-leaves-green-striped-wallpaper-preview.webp);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
