@@ -39,32 +39,80 @@
 }
 .container-F{
     background: #fff;
-    border-top: 1px solid #c5c5c538;
+    border-top: 1px solid #c5c5c566;
     .color-Footer{
         padding: 20px 0px;
-        div{
+        gap: 15px;
+        div{      
+            width: 290px;
+            img{
+                width: 120px;
+                height: auto;
+            }
             h1{
+                font-size: 14px;
                 color: #000;
             }
             p{
-                color: #000;
+                font-size: 14px;
+                line-height: 1.8em;
+                color: rgb(112, 112, 112);
             }
             h2{
-                color: #000;
+                line-height: 1.4em;
+                padding: 0px 0px 10px;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #333333;
+                margin: 0px;
             }
-            div{
-                p{
-                    input{
-                        color: #000;
-                    }
+            .color-line-f{
+                width: 50px;
+                height: 4px;
+                border-radius: 5px;
+                background: #5ec79c;
+                padding: 0px;
+                margin-bottom: 50px;
+            }
+            .grid-f{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px;
+                img{
+                    cursor: pointer;
+                    width: 90px;
+                    height: 90px;
                 }
-                a{
-                    color: #000;
+            }
+            .cn-destacados{
+                display: flex;
+                div{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    a{
+                        padding: 5px 0;
+                        background: #fff;
+                        color: #000;
+                        font-size: 13px;
+                        color: #777777;
+                        line-height: 24px;
+                    }
+                    a:hover{
+                        color: #f5b062;
+                        transition: all 0.2s ease-out 0s;
+                    }
                 }
             }
             .social-F{
+                gap: 9px;
                 span{
                     color: #000;
+                    font-size: 13px;
                 }
             }
         }
