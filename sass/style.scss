@@ -31,7 +31,7 @@ $font2 : 'Dancing Script', cursive;
                 justify-content: space-between;
                 align-items: center;
                 .img{
-                    width: 170px;
+                    width: 140px;
                     height: 110px;
                     padding: 0;
                     background: url(../img/logo.png);
@@ -58,6 +58,7 @@ $font2 : 'Dancing Script', cursive;
 
                 }
                 span{
+                    margin: 15px;
                     display: none;
                     font-size: 30px;
                     color: #fff;
@@ -80,6 +81,7 @@ $font2 : 'Dancing Script', cursive;
                 align-items: center;
                 text-align: center;
                 padding: 170px 0;
+                transition: all 0.2s ease-out 0s;
                 img{
                     width: 64px;
                     height: auto;
@@ -135,6 +137,7 @@ $font2 : 'Dancing Script', cursive;
                         color: #fff;
                         background-color: #5ec79c;
                         border: 2px solid #5ec79c;
+                        transition: all 0.2s ease-out 0s;
                     }
                     span:hover{
                         background: none;
@@ -186,7 +189,7 @@ $font2 : 'Dancing Script', cursive;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                div{
+                .container-info-CSS{
                     width: 359px;
                     padding-bottom: 10px;
                     .color-fondo{
@@ -228,8 +231,86 @@ $font2 : 'Dancing Script', cursive;
                     a:hover{
                         color: #5ec79c;
                     }
+                }  
+            }
+            .container-img-2{
+                padding: 50px 0 ;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 10px;
+                .img-1-G{
+                    width: 49%;
+                    height: 410px;
+                    .img-G-color{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
-                
+                .img-1-G-2{
+                    width: 49%;
+                    height: 410px;
+                    display: grid;
+                    grid-template-columns: repeat(2,49%);
+                    grid-template-rows: repeat(2,200px);
+                    gap: 10px;
+                    .img-G-color-2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .color-G,
+                .color-G-2,
+                .color-G-3,
+                .color-G-4,
+                .color-G-5{
+                    width: 95%;
+                    height: 95%;
+                    opacity: 0;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #000000a8;
+                    transition: all 700ms ease;
+                    -webkit-transform: scale(0.5,0.5) rotate(360deg);
+                }
+                .c-img1:hover,
+                .c-img2:hover,
+                .c-img3:hover,
+                .c-img4:hover,
+                .c-img5:hover{
+                    .color-G,
+                    .color-G-2,
+                    .color-G-3,
+                    .color-G-4,
+                    .color-G-5{
+                        opacity: 1;
+                        display: flex;
+                        -webkit-transition: all 700ms ease;
+                        -webkit-transform: scale(0.99,0.99) rotate(0deg);
+                    }
+                    .btn-icon{
+                        display: flex;
+                    }
+                }
+                .btn-icon{
+                    display: none;
+                    font-size: 20px;
+                    border: 1px solid #fff;
+                    padding: 10px;
+                    margin-right: 10px;
+                    color: #fff;
+                    transition: all 0.2s ease-out 0s;
+                }
+                .btn-icon:hover{
+                    border: 1px solid #f5b062;
+                    color: #f5b062;
+                }
             }
         }
     }
@@ -341,15 +422,82 @@ $font2 : 'Dancing Script', cursive;
     background-repeat: no-repeat;
     transition: all 0.2s ease-out 0s;
 }
+.c-img1{
+    background: url(../img/frutas-vegetales/cerezas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-img2{
+    background: url(../img/frutas-vegetales/fresas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-img3{
+    background: url(../img/frutas-vegetales/sandia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-img4{
+    background: url(../img/frutas-vegetales/tomates.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-img5{
+    background: url(../img/frutas-vegetales/uvas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 @media screen and (max-width: 858px){
-    .container-S-menu{
-        header{
-            ul{
-                display: none;
+    .container-S{
+        background-size: auto;
+        .container-S-menu{
+            header{
+                ul{
+                    display: none;
+                }
+                span{
+                    display: flex;
+                }
             }
-            span{
-                display: flex;
+            .top-md{
+                padding: 85px 0;
+                div{
+                    a:nth-child(2){
+                        padding: 8px 16px; 
+                    }
+                    a:nth-child(3){
+                        padding: 8px 16px; 
+                    }
+                }
             }
+        }
+    }
+    .img-1-G{
+        width: 100% !important;
+    }
+    .img-1-G-2{
+       width: 100% !important;
+    }
+}
+@media screen and (max-width: 340px){
+    .top-md{
+        div{
+            a{
+                font-size: 12px !important;
+            }
+        }
+    }
+    .container-info-CSS{
+        width: 320px !important;
+    }
+    .gap-f{
+        h1{
+            font-size: 14px !important;
         }
     }
 }

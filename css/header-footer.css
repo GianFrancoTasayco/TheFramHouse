@@ -1,0 +1,45 @@
+@import url(../css/style.css);
+.container-S {
+  background: url(../img/frutas-vegetales/beneficios.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .container-S .color .container-S-menu {
+    width: 100%; }
+    .container-S .color .container-S-menu header {
+      padding: 0px 20px;
+      background-color: #fff; }
+      .container-S .color .container-S-menu header .img {
+        width: 120px;
+        height: 100px; }
+      .container-S .color .container-S-menu header ul {
+        gap: 60px; }
+        .container-S .color .container-S-menu header ul li a {
+          color: #000;
+          font-size: 14px; }
+        .container-S .color .container-S-menu header ul li a:hover {
+          color: #5ec79c; }
+      .container-S .color .container-S-menu header span {
+        color: #000; }
+    .container-S .color .container-S-menu .products-md {
+      padding: 75px 0px; }
+
+.container-F {
+  background: #fff;
+  border-top: 1px solid #c5c5c538; }
+  .container-F .color-Footer {
+    padding: 20px 0px; }
+    .container-F .color-Footer div h1 {
+      color: #000; }
+    .container-F .color-Footer div p {
+      color: #000; }
+    .container-F .color-Footer div h2 {
+      color: #000; }
+    .container-F .color-Footer div div p input {
+      color: #000; }
+    .container-F .color-Footer div div a {
+      color: #000; }
+    .container-F .color-Footer div .social-F span {
+      color: #000; }
+
+/*# sourceMappingURL=header-footer.css.map */

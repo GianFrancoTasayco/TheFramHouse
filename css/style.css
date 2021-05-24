@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: center; }
         .container-S-menu header .img {
-          width: 170px;
+          width: 140px;
           height: 110px;
           padding: 0;
           background: url(../img/logo.png);
@@ -50,6 +50,7 @@
             .container-S-menu header ul li a:hover {
               color: #5ec79c; }
         .container-S-menu header span {
+          margin: 15px;
           display: none;
           font-size: 30px;
           color: #fff;
@@ -68,7 +69,8 @@
         width: 100%;
         align-items: center;
         text-align: center;
-        padding: 170px 0; }
+        padding: 170px 0;
+        transition: all 0.2s ease-out 0s; }
         .container-S-menu div img {
           width: 64px;
           height: auto; }
@@ -117,7 +119,8 @@
             border-radius: 50%;
             color: #fff;
             background-color: #5ec79c;
-            border: 2px solid #5ec79c; }
+            border: 2px solid #5ec79c;
+            transition: all 0.2s ease-out 0s; }
           .container-S-menu div div span:hover {
             background: none;
             color: #5ec79c; }
@@ -156,17 +159,17 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap; }
-        .container-I-If .container-img div {
+        .container-I-If .container-img .container-info-CSS {
           width: 359px;
           padding-bottom: 10px; }
-          .container-I-If .container-img div .color-fondo {
+          .container-I-If .container-img .container-info-CSS .color-fondo {
             background: #000;
             height: 151px;
             width: 151px;
             filter: blur(10px);
             position: relative;
             z-index: -1; }
-          .container-I-If .container-img div .img-regiones {
+          .container-I-If .container-img .container-info-CSS .img-regiones {
             background: url(../img/regiones/costa.jpg);
             background-position: center;
             background-size: cover;
@@ -175,21 +178,108 @@
             height: 150px;
             z-index: 10;
             border-radius: 25px; }
-          .container-I-If .container-img div .img-sierra {
+          .container-I-If .container-img .container-info-CSS .img-sierra {
             background: url(../img/regiones/cierra.jpg); }
-          .container-I-If .container-img div .img-selva {
+          .container-I-If .container-img .container-info-CSS .img-selva {
             background: url(../img/regiones/selva.jpg); }
-          .container-I-If .container-img div h1 {
+          .container-I-If .container-img .container-info-CSS h1 {
             font-size: 25px;
             font-weight: 300; }
-          .container-I-If .container-img div a {
+          .container-I-If .container-img .container-info-CSS a {
             text-decoration: none;
             color: #000; }
-          .container-I-If .container-img div p {
+          .container-I-If .container-img .container-info-CSS p {
             padding: 10px 0px 10px;
             font-size: 15px; }
-          .container-I-If .container-img div a:hover {
+          .container-I-If .container-img .container-info-CSS a:hover {
             color: #5ec79c; }
+      .container-I-If .container-img-2 {
+        padding: 50px 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px; }
+        .container-I-If .container-img-2 .img-1-G {
+          width: 49%;
+          height: 410px; }
+          .container-I-If .container-img-2 .img-1-G .img-G-color {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+        .container-I-If .container-img-2 .img-1-G-2 {
+          width: 49%;
+          height: 410px;
+          display: grid;
+          grid-template-columns: repeat(2, 49%);
+          grid-template-rows: repeat(2, 200px);
+          gap: 10px; }
+          .container-I-If .container-img-2 .img-1-G-2 .img-G-color-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+        .container-I-If .container-img-2 .color-G,
+        .container-I-If .container-img-2 .color-G-2,
+        .container-I-If .container-img-2 .color-G-3,
+        .container-I-If .container-img-2 .color-G-4,
+        .container-I-If .container-img-2 .color-G-5 {
+          width: 95%;
+          height: 95%;
+          opacity: 0;
+          align-items: center;
+          justify-content: center;
+          background-color: #000000a8;
+          transition: all 700ms ease;
+          -webkit-transform: scale(0.5, 0.5) rotate(360deg); }
+        .container-I-If .container-img-2 .c-img1:hover .color-G,
+        .container-I-If .container-img-2 .c-img1:hover .color-G-2,
+        .container-I-If .container-img-2 .c-img1:hover .color-G-3,
+        .container-I-If .container-img-2 .c-img1:hover .color-G-4,
+        .container-I-If .container-img-2 .c-img1:hover .color-G-5,
+        .container-I-If .container-img-2 .c-img2:hover .color-G,
+        .container-I-If .container-img-2 .c-img2:hover .color-G-2,
+        .container-I-If .container-img-2 .c-img2:hover .color-G-3,
+        .container-I-If .container-img-2 .c-img2:hover .color-G-4,
+        .container-I-If .container-img-2 .c-img2:hover .color-G-5,
+        .container-I-If .container-img-2 .c-img3:hover .color-G,
+        .container-I-If .container-img-2 .c-img3:hover .color-G-2,
+        .container-I-If .container-img-2 .c-img3:hover .color-G-3,
+        .container-I-If .container-img-2 .c-img3:hover .color-G-4,
+        .container-I-If .container-img-2 .c-img3:hover .color-G-5,
+        .container-I-If .container-img-2 .c-img4:hover .color-G,
+        .container-I-If .container-img-2 .c-img4:hover .color-G-2,
+        .container-I-If .container-img-2 .c-img4:hover .color-G-3,
+        .container-I-If .container-img-2 .c-img4:hover .color-G-4,
+        .container-I-If .container-img-2 .c-img4:hover .color-G-5,
+        .container-I-If .container-img-2 .c-img5:hover .color-G,
+        .container-I-If .container-img-2 .c-img5:hover .color-G-2,
+        .container-I-If .container-img-2 .c-img5:hover .color-G-3,
+        .container-I-If .container-img-2 .c-img5:hover .color-G-4,
+        .container-I-If .container-img-2 .c-img5:hover .color-G-5 {
+          opacity: 1;
+          display: flex;
+          -webkit-transition: all 700ms ease;
+          -webkit-transform: scale(0.99, 0.99) rotate(0deg); }
+        .container-I-If .container-img-2 .c-img1:hover .btn-icon,
+        .container-I-If .container-img-2 .c-img2:hover .btn-icon,
+        .container-I-If .container-img-2 .c-img3:hover .btn-icon,
+        .container-I-If .container-img-2 .c-img4:hover .btn-icon,
+        .container-I-If .container-img-2 .c-img5:hover .btn-icon {
+          display: flex; }
+        .container-I-If .container-img-2 .btn-icon {
+          display: none;
+          font-size: 20px;
+          border: 1px solid #fff;
+          padding: 10px;
+          margin-right: 10px;
+          color: #fff;
+          transition: all 0.2s ease-out 0s; }
+        .container-I-If .container-img-2 .btn-icon:hover {
+          border: 1px solid #f5b062;
+          color: #f5b062; }
   .container-F {
     width: 100%;
     background: #333333; }
@@ -279,10 +369,63 @@
   background-repeat: no-repeat;
   transition: all 0.2s ease-out 0s; }
 
+.c-img1 {
+  background: url(../img/frutas-vegetales/cerezas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.c-img2 {
+  background: url(../img/frutas-vegetales/fresas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.c-img3 {
+  background: url(../img/frutas-vegetales/sandia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.c-img4 {
+  background: url(../img/frutas-vegetales/tomates.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.c-img5 {
+  background: url(../img/frutas-vegetales/uvas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 @media screen and (max-width: 858px) {
-  .container-S-menu header ul {
-    display: none; }
-  .container-S-menu header span {
-    display: flex; } }
+  .container-S {
+    background-size: auto; }
+    .container-S .container-S-menu header ul {
+      display: none; }
+    .container-S .container-S-menu header span {
+      display: flex; }
+    .container-S .container-S-menu .top-md {
+      padding: 85px 0; }
+      .container-S .container-S-menu .top-md div a:nth-child(2) {
+        padding: 8px 16px; }
+      .container-S .container-S-menu .top-md div a:nth-child(3) {
+        padding: 8px 16px; }
+
+  .img-1-G {
+    width: 100% !important; }
+
+  .img-1-G-2 {
+    width: 100% !important; } }
+@media screen and (max-width: 340px) {
+  .top-md div a {
+    font-size: 12px !important; }
+
+  .container-info-CSS {
+    width: 320px !important; }
+
+  .gap-f h1 {
+    font-size: 14px !important; } }
 
 /*# sourceMappingURL=style.css.map */

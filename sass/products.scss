@@ -1,0 +1,144 @@
+@import url(../css/header-footer.css);
+$font1 : 'Kanit', sans-serif;
+$font2 : 'Dancing Script', cursive;
+.container-P{
+    padding: 120px 0px 90px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    &-N{
+        padding-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: 14px;
+            color: #777777;
+            line-height: 24px;
+        }
+        select{
+            position: relative;
+            display: block;
+            line-height: 24px;
+            padding: 9px 15px 9px;
+            width: 270px;
+            height: 44px;
+            font-size: 14px;
+            border: 1px solid #f0f0f0;
+            cursor: pointer;
+            -webkit-appearance: none;
+            background: url(../img/download.png) right center no-repeat;
+            color: #999999;
+            transition: all 500ms ease;
+            -webkit-transition: all 500ms ease;
+            font-family: $font1;
+        }
+    }
+    &-Grid{
+        width: 100%;
+        display: grid;
+        padding-bottom: 50px;
+        grid-template-columns: repeat(4, 23%);
+        grid-template-rows: repeat(3, 370px);
+        gap: 32px;
+        &-Product{
+            .products-container{
+                width: 100%;
+                height: 100%;
+                border: solid 1px #3333333b;
+                img{
+                    width: 100%;
+                    height: 270px;
+                }
+                .txt-P-product{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 0px 15px;
+                    transition: all 0.2s ease-out 0s;
+                    h1{
+                        font-size: 18px;
+                        color: #4b4b4b;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #4b4b4b;
+                    }
+                }
+            }
+            .hover-product-container{
+                .prod-options{
+                    width: 100%;
+                    opacity: 0;
+                    height: 100%;
+                    background: #ffffffad;
+                    padding-top: 84%;
+                    padding-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    z-index: 10;
+                    position: relative;
+                    top: -372px;
+                    transition: all 0.2s ease-out 0s;
+                    .span-product-c{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        margin-bottom: 15px;
+                        span{
+                            background: #5ec79cc7;
+                            padding: 12px;
+                            font-size: 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: all 0.2s ease-out 0s;
+                        }
+                        span:hover{
+                            background: #f5b062d8;
+                        }
+                    }
+                    a{
+                        background: #000;
+                        color: #fff;
+                        width: 70%;
+                        margin: 0 auto;
+                        text-decoration: none;
+                        text-align: center;
+                        padding: 15px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: $font1;
+                        border-radius: 5px;
+                        transition: all 0.2s ease-out 0s;
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                    a:hover{
+                        color: #000;
+                        background: #f5b062d8;
+                    }
+                }
+                .error1{
+                    top: -368px;
+                }
+            }
+        }
+        &-Product:hover{
+            .prod-options{
+                display: flex;
+                opacity: 1;
+            }
+            .txt-P-product{
+                opacity: 0;
+            }
+        }
+    }
+}
