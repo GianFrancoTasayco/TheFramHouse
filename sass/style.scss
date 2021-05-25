@@ -318,7 +318,7 @@ $font2 : 'Dancing Script', cursive;
         width: 100%;
         background: #333333;
         .color-Footer{
-            padding: 100px 0;
+            padding: 50px 0;
             width: 90%;
             margin: 0 auto;
             display: flex;
@@ -452,6 +452,15 @@ $font2 : 'Dancing Script', cursive;
     background-position: center;
     background-repeat: no-repeat;
 }
+body::-webkit-scrollbar{
+    width: 10px;
+    transition: all 0.2s ease-out 0s;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f5b062;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 858px){
     .container-S{
         background-size: auto;
