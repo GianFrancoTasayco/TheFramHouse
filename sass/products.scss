@@ -73,6 +73,9 @@ $font2 : 'Dancing Script', cursive;
                 }
             }
             .hover-product-container{
+                top: -372px;
+                left: 1px;
+                position: relative;
                 .prod-options{
                     width: 100%;
                     opacity: 0;
@@ -83,8 +86,6 @@ $font2 : 'Dancing Script', cursive;
                     display: flex;
                     flex-direction: column;
                     z-index: 10;
-                    position: relative;
-                    top: -372px;
                     transition: all 0.2s ease-out 0s;
                     .span-product-c{
                         width: 100%;
@@ -126,9 +127,10 @@ $font2 : 'Dancing Script', cursive;
                         background: #f5b062d8;
                     }
                 }
-                .error1{
-                    top: -368px;
-                }
+            }
+            .error1{
+                top: -368px;
+                left: 0px;
             }
         }
         &-Product:hover{
@@ -140,5 +142,71 @@ $font2 : 'Dancing Script', cursive;
                 opacity: 0;
             }
         }
+    }
+    &-btn{
+        .next-btn{
+            width: 20%;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            a{
+                font-family: $font1;
+                font-size: 16px;
+                color: #000000;
+                text-decoration: none;
+                padding: 5px 15px;
+                border-radius: 25px;
+                border: 1px solid #4b4b4bb7;
+                transition: all 0.2s ease-out 0s;
+            }
+            a:hover{
+                border: 1px solid #5ec79c;
+                color: #5ec79c;
+            }
+            .pag-1{
+                color: #fff;
+                background-color: #5ec79c;
+                border: 1px solid #5ec79c;
+            }
+            .pag-1:hover{
+                background-color: #fff;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1150px){
+    .container-P{
+        padding: 60px 0px 50px;
+    }
+    .container-P-Grid{
+        grid-template-columns: repeat(3, 31.2%);
+        grid-template-rows: repeat(4, 370px);
+    }
+    .prod-options{
+        padding-top: 72% !important;
+    }
+}
+@media screen and (max-width: 858px){
+    .container-P-Grid{
+        grid-template-columns: repeat(2, 47.4%);
+        grid-template-rows: repeat(6, 370px);
+    }
+    .prod-options{
+        padding-top: 71% !important;
+    }
+}
+@media screen and (max-width: 414px){
+    .container-P-N{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-P-Grid{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(12, 370px);
+    }
+    .prod-options{
+        padding-top: 62% !important;
     }
 }
