@@ -42,13 +42,27 @@
           gap: 20px; }
           .container-S-menu header ul li {
             display: flex; }
-            .container-S-menu header ul li a {
+            .container-S-menu header ul li span, .container-S-menu header ul li a {
+              display: flex;
               text-decoration: none;
               color: #fff;
               font-size: 15px;
               font-weight: 700; }
             .container-S-menu header ul li a:hover {
               color: #5ec79c; }
+            .container-S-menu header ul li span {
+              color: #000  !important;
+              border: 1px solid #fff;
+              background-color: #fff;
+              font-size: 20px;
+              margin-left: 0px;
+              padding: 5px 10px;
+              transition: all 0.2s ease-out 0s; }
+            .container-S-menu header ul li span:hover {
+              color: #5ec79c !important;
+              border: 1px solid #5ec79c;
+              background-color: #fff;
+              transform: scale(0.9); }
         .container-S-menu header span {
           margin: 15px;
           display: none;
@@ -233,7 +247,7 @@
           justify-content: center;
           background-color: #000000a8;
           transition: all 700ms ease;
-          -webkit-transform: scale(0.5, 0.5) rotate(360deg); }
+          transform: scale(0.5, 0.5) rotate(360deg); }
         .container-I-If .container-img-2 .c-img1:hover .color-G,
         .container-I-If .container-img-2 .c-img1:hover .color-G-2,
         .container-I-If .container-img-2 .c-img1:hover .color-G-3,
@@ -261,8 +275,8 @@
         .container-I-If .container-img-2 .c-img5:hover .color-G-5 {
           opacity: 1;
           display: flex;
-          -webkit-transition: all 700ms ease;
-          -webkit-transform: scale(0.99, 0.99) rotate(0deg); }
+          transition: all 700ms ease;
+          transform: scale(0.99, 0.99) rotate(0deg); }
         .container-I-If .container-img-2 .c-img1:hover .btn-icon,
         .container-I-If .container-img-2 .c-img2:hover .btn-icon,
         .container-I-If .container-img-2 .c-img3:hover .btn-icon,

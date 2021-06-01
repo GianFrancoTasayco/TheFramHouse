@@ -45,7 +45,8 @@ $font2 : 'Dancing Script', cursive;
                     gap: 20px;
                     li{
                         display: flex;
-                        a{
+                        span, a{
+                            display: flex;
                             text-decoration: none;
                             color: #fff;
                             font-size: 15px;
@@ -54,8 +55,22 @@ $font2 : 'Dancing Script', cursive;
                         a:hover{
                             color: #5ec79c;
                         }
+                        span{
+                            color: #000  !important;
+                            border: 1px solid #fff ;
+                            background-color: #fff ;
+                            font-size: 20px;
+                            margin-left: 0px;
+                            padding: 5px 10px;
+                            transition: all 0.2s ease-out 0s;
+                        }
+                        span:hover{
+                            color: #5ec79c !important;
+                            border: 1px solid #5ec79c ;
+                            background-color: #fff;
+                            transform: scale(0.9);
+                        }
                     }
-
                 }
                 span{
                     margin: 15px;
@@ -277,7 +292,7 @@ $font2 : 'Dancing Script', cursive;
                     justify-content: center;
                     background-color: #000000a8;
                     transition: all 700ms ease;
-                    -webkit-transform: scale(0.5,0.5) rotate(360deg);
+                    transform: scale(0.5,0.5) rotate(360deg);
                 }
                 .c-img1:hover,
                 .c-img2:hover,
@@ -291,8 +306,8 @@ $font2 : 'Dancing Script', cursive;
                     .color-G-5{
                         opacity: 1;
                         display: flex;
-                        -webkit-transition: all 700ms ease;
-                        -webkit-transform: scale(0.99,0.99) rotate(0deg);
+                        transition: all 700ms ease;
+                        transform: scale(0.99,0.99) rotate(0deg);
                     }
                     .btn-icon{
                         display: flex;
